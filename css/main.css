@@ -97,7 +97,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+.flyheader{
+    z-index: 99;
+    background: #1E1D22;
+    height: 60px;
+    color: #fff;
+    width: 100%;
+    min-width: 1280px;
+    top: 0;
+    border-bottom: 5px solid rgba(255,255,255,0.1);
+}
 
 
 
