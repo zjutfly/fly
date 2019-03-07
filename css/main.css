@@ -105,17 +105,47 @@ textarea {
     width: 100%;
     min-width: 1280px;
     top: 0;
-    border-bottom: 5px solid rgba(255,255,255,0.1);
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+.logolink{
+    float: left;
+    color: #fff;
+    font-family: Consolas;
+    font-size: 40px;
+    margin-left: 133px;
+    top: 30px;
+    text-decoration: none;
+}
+.headlink{
+    top: 20px;
+    position: relative;
+    float: right;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+    padding-right: 133px;
+
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+.login{
+    color: #fff;
+    /*padding-left: 33px;*/
+    text-decoration: none;
+}
+.register{
+    color: #fff;
+    margin-left: 33px;
+    text-decoration: none;
 }
 
 
-
-
-
-
-
-
-
+.sidebar-wrapper {
+    position: relative;
+    height: 100%;
+    overflow: auto;
+}
 
 
 
