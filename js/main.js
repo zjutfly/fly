@@ -11,17 +11,8 @@ $(document).ready(function(){
         $("#flyheader").css("background","#1E1D22");
     });
     //sidebar
-    var $mainSidebar = $( "#sidebar-main" );
-    $mainSidebar.simplerSidebar( {
-        attr: "sidebar-main",
-        selectors: {
-            trigger: "#sidebar-main-trigger",
-            quitter: ".quitter"
-        },
-        animation: {
-            easing: "easeOutQuint"
-        }
-    } );
+
+
 
 });
 
