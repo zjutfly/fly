@@ -51,17 +51,22 @@
     </div>
     <nav>
         <ul>
-            <li class="store"><span class="store-icon"></span><a href="#">Store</a></li>
-            <li class="movies"><span class="movies-icon"></span><a href="#">Movies</a></li>
-            <li class="music"><span class="music-icon"></span><a href="#">Music</a></li>
-            <li class="books"><span class="books-icon"></span><a href="#">Books</a></li>
-            <li class="magazines"><span class="magazines-icon"></span><a href="#">Magazines</a></li>
-            <li class="devices"><span class="devices-icon"></span><a href="#">Devices</a></li>
+            <li class="store"><span class="store-icon"></span><a href="#" id="amountbutton">总量趋势</a></li>
+            <li class="movies"><span class="movies-icon"></span><a href="#"  id="departbutton">部门分布</a></li>
+            <li class="music"><span class="music-icon"></span><a href="#" id="areabutton">地区分布</a></li>
+            <li class="books"><span class="books-icon"></span><a href="#" id="typebutton">类型分布</a></li>
+            <li class="magazines"><span class="magazines-icon"></span><a href="#" id="emotionbutton">问政情感分析</a></li>
+            <li class="devices"><span class="devices-icon"></span><a href="#" id="hotspotbutton">热点雷达</a></li>
         </ul>
     </nav>
 
-    <div id="main" style="width: 600px;height:400px; left: 400px; position: absolute; top: 130px;"></div>
 
+    <div id="amount" class="board"></div>
+    <div id="depart" class="board"></div>
+    <div id="area" class="board"></div>
+    <div id="type" class="board"></div>
+    <div id="emotion" class="board"></div>
+    <div id="hotspot" class="board"></div>
 
 
     <script src="js/charts.js"></script>

@@ -141,13 +141,13 @@ textarea {
 }
 
 
-/*.sidebar-wrapper {*/
-    /*position: relative;*/
-    /*height: 100%;*/
-    /*overflow: auto;*/
-/*}*/
-
-
+.board{
+    width: 600px;
+    height: 500px;
+    left: 400px;
+    position: absolute;
+    top: 130px;
+}
 
 
 
