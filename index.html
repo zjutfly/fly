@@ -15,15 +15,16 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--<script src="https://cdn.bootcss.com/echarts/4.2.1-rc1/echarts.js"></script>-->
     <script src="js/echarts.common.min.js"></script>
+    <link rel="stylesheet" href="css/sss.css">
 
-    <script src="js/sidebar.js"></script>
-
+    <!--google侧边。-->
+    <!--<script src="js/sidebar.js"></script>-->
+    <!--<link rel="stylesheet" href="css/style.css">-->
 
 </head>
 <body>
@@ -34,39 +35,108 @@
     <!-- Add your site or application content here -->
     <!--<p>Hello world! This is HTML5 Boilerplate.</p>-->
 
-    <header id="flyheader" class="flyheader">
-        <div style="position: relative;">
-            <a class="logolink" href="https://github.com/zjutfly/fly"> F L Y</a>
-            <div class="headlink">
-                <a class="login" href="https://login.bce.baidu.com/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a>
-                <a class="register" href="https://login.bce.baidu.com/reg.html?tpl=bceplat&amp;from=portal" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a>
+    <!--&lt;!&ndash;自己的header&ndash;&gt;-->
+    <!--<header id="flyheader" class="flyheader">-->
+        <!--<div style="position: relative;">-->
+            <!--<a class="logolink" href="https://github.com/zjutfly/fly"> F L Y</a>-->
+            <!--<div class="headlink">-->
+                <!--<a class="login" href="https://login.bce.baidu.com/"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;登录</a>-->
+                <!--<a class="register" href="https://login.bce.baidu.com/reg.html?tpl=bceplat&amp;from=portal" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;注册</a>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</header>-->
+
+    <!--&lt;!&ndash;google sidebar&ndash;&gt;-->
+    <!--<div style="text-align:center;clear:both; position: absolute">-->
+        <!--<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>-->
+        <!--<script src="/follow.js" type="text/javascript"></script>-->
+    <!--</div>-->
+    <!--<nav>-->
+        <!--<ul>-->
+            <!--<li class="store"><span class="store-icon"></span><a href="#" id="amountbutton">总量趋势</a></li>-->
+            <!--<li class="movies"><span class="movies-icon"></span><a href="#"  id="departbutton">部门分布</a></li>-->
+            <!--<li class="music"><span class="music-icon"></span><a href="#" id="areabutton">地区分布</a></li>-->
+            <!--<li class="books"><span class="books-icon"></span><a href="#" id="typebutton">类型分布</a></li>-->
+            <!--<li class="magazines"><span class="magazines-icon"></span><a href="#" id="emotionbutton">问政情感分析</a></li>-->
+            <!--<li class="devices"><span class="devices-icon"></span><a href="#" id="hotspotbutton">热点雷达</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+
+    <div id="wrapper">
+        <div class="overlay"></div>
+
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        F L Y
+                    </a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-home"></i> 总量趋势</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-folder"></i> 部门分布</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-file-o"></i> 部门分布e</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-plus"></i> 统计图表！<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Dropdown heading</li>
+                        <li><a href="#">部门分布</a></li>
+                        <li><a href="#">部门分布</a></li>
+                        <li><a href="#">部门分布</a></li>
+                        <li><a href="#">部门分布</a></li>
+                        <li><a href="#">部门分布</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">&nbsp;</a>
+                </li>
+                <li>
+                    <a href="#">&nbsp;</a>
+                </li>
+                <li >
+                    <a href="#"><span class="glyphicon glyphicon-user"></span> 登录</a>
+                </li>
+                <li >
+                    <a href="#"><span class="glyphicon glyphicon-tag"></span> 注册</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed animated fadeInLeft" data-toggle="offcanvas">
+                <span class="hamb-top"></span>
+                <span class="hamb-middle"></span>
+                <span class="hamb-bottom"></span>
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <h1 class="page-header">Awesome Bootstrap 3 Sidebar Navigation</h1>
+                        <!--图表区域-->
+                        <div id="amount" class="board"></div>
+                        <div id="depart" class="board"></div>
+                        <div id="area" class="board"></div>
+                        <div id="type" class="board"></div>
+                        <div id="emotion" class="board"></div>
+                        <div id="hotspot" class="board"></div>
+                        <!--<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>-->
+
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
-    <!--sidebar-->
-    <div style="text-align:center;clear:both; position: absolute">
-        <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-        <script src="/follow.js" type="text/javascript"></script>
     </div>
-    <nav>
-        <ul>
-            <li class="store"><span class="store-icon"></span><a href="#" id="amountbutton">总量趋势</a></li>
-            <li class="movies"><span class="movies-icon"></span><a href="#"  id="departbutton">部门分布</a></li>
-            <li class="music"><span class="music-icon"></span><a href="#" id="areabutton">地区分布</a></li>
-            <li class="books"><span class="books-icon"></span><a href="#" id="typebutton">类型分布</a></li>
-            <li class="magazines"><span class="magazines-icon"></span><a href="#" id="emotionbutton">问政情感分析</a></li>
-            <li class="devices"><span class="devices-icon"></span><a href="#" id="hotspotbutton">热点雷达</a></li>
-        </ul>
-    </nav>
 
 
-    <div id="amount" class="board"></div>
-    <div id="depart" class="board"></div>
-    <div id="area" class="board"></div>
-    <div id="type" class="board"></div>
-    <div id="emotion" class="board"></div>
-    <div id="hotspot" class="board"></div>
+
 
 
     <script src="js/charts.js"></script>
@@ -75,6 +145,36 @@
     <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>-->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var trigger = $('.hamburger'),
+                overlay = $('.overlay'),
+                isClosed = false;
+
+            trigger.click(function () {
+                hamburger_cross();
+            });
+
+            function hamburger_cross() {
+
+                if (isClosed == true) {
+                    overlay.hide();
+                    trigger.removeClass('is-open');
+                    trigger.addClass('is-closed');
+                    isClosed = false;
+                } else {
+                    overlay.show();
+                    trigger.removeClass('is-closed');
+                    trigger.addClass('is-open');
+                    isClosed = true;
+                }
+            }
+
+            $('[data-toggle="offcanvas"]').click(function () {
+                $('#wrapper').toggleClass('toggled');
+            });
+        });
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <!--<script>-->
