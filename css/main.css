@@ -147,13 +147,15 @@ textarea {
     background-color: #F5F5F5;
     border-radius: 30px;
     width: 700px;
-    height: 600px;
+    height: 480px;
     /*left: 400px;*/
     position: absolute;
     /*top: 130px;*/
 }
 
+tr{
 
+}
 
 
 /* ==========================================================================

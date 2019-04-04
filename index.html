@@ -54,6 +54,9 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#" id="listbutton refreshbutton"><i class="glyphicon glyphicon-tags"></i> 主页/投诉总览</a>
+                </li>
+                <li>
                     <a href="#" id="amountbutton"><i class="glyphicon glyphicon-signal"></i> 投诉总量趋势</a>
                 </li>
                 <li>
@@ -105,8 +108,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h1 class="page-header"><span id="page-header">最近一周的投诉量趋势图</span></h1>
+                        <h1 class="page-header"><span id="page-header">投诉线索智能筛查系统</span></h1>
                         <!--图表区域-->
+                        <div id="mainlist" class="mainlist table">
+                            <table class="table table-striped table-bordered table-hover table-condensed" width="95%">
+                                <thead>
+                                <tr class="active">
+                                    <th width="40px">序号</th>
+                                    <th >投诉内容</th>
+                                    <th width="100px"> 时间</th>
+                                </tr>
+                                </thead>
+                                <tbody id="tbody1">
+                                <!--<tr>-->
+                                    <!--<th>1</th>-->
+                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                                    <!--<th>2012.1.1</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>2</th>-->
+                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                                    <!--<th>2012.2.1</th>-->
+                                <!--</tr>-->
+                                <!--<tr>-->
+                                    <!--<th>3</th>-->
+                                    <!--<th>wasadasgftemmunhbgvfcertertretett</th>-->
+                                    <!--<th>2012.11.1</th>-->
+                                <!--</tr>-->
+                                </tbody>
+                            </table>
+                        </div>
                         <div id="amount" class="board"></div>
                         <div id="depart" class="board"></div>
                         <div id="area" class="board"></div>
