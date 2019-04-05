@@ -18,6 +18,16 @@ $(document).ready(function(){
         legend: {
             data:['数量']
         },
+        toolbox: {
+            show : true,
+            feature : {
+                mark : {show: true},
+                dataView : {show: true, readOnly: true},
+                magicType : {show: true, type: ['line', 'bar']},
+                restore : {show: true},
+                saveAsImage : {show: true}
+            }
+        },
         xAxis: {
             // data: data1.times,
             data: ["2019.4.1","2019.4.2","2019.4.3","2019.4.4","2019.4.5","2019.4.6","2019.4.7"]
@@ -27,7 +37,12 @@ $(document).ready(function(){
             name: '数量',
             type: 'line',
             // data: data1.amount,
-            data: [5, 20, 36, 10, 10, 20, 3]
+            data: [5, 20, 36, 10, 10, 20, 3],
+            markLine : {
+                data : [
+                    {type : 'average', name: '平均值'}
+                ]
+            }
         }]
     };
     // 使用刚指定的配置项和数据显示图表。

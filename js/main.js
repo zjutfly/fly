@@ -6,7 +6,7 @@ function getdata() {
         data1 = datas;
     })
 }
-//还要修改
+//
 function createtable(data1) {
     var tableData = "<tr>";
     for(var i = 0; i < data1.length; i++) {
@@ -31,6 +31,8 @@ $(document).ready(function(){
     $("#type").hide();
     $("#emotion").hide();
     $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
 
     $("#kkk").click(function(){
         $("#flyfly").hide();
@@ -45,81 +47,8 @@ $(document).ready(function(){
     // $(".flyheader").mouseleave(function(){
     //     $("#flyheader").css("background","#1E1D22");
     // });
-    $("#listbutton").click(function(){
-        $("#mainlist").show();
-        $("#amount").hide();
-        $("#depart").hide();
-        $("#area").hide();
-        $("#type").hide();
-        $("#emotion").hide();
-        $("#hotspot").hide();
-        // document.write(123);
-        $(".page-header").text("投诉线索智能筛查系统");
-    });
-    $("#amountbutton").click(function(){
-        $("#mainlist").hide();
-        $("#amount").show();
-        $("#depart").hide();
-        $("#area").hide();
-        $("#type").hide();
-        $("#emotion").hide();
-        $("#hotspot").hide();
-        // document.write(123);
-        $(".page-header").text("最近一周的投诉量趋势图");
-    });
-    // $("#departbutton").click(function(){
-    //     $("#amount").hide();
-    //     $("#depart").show();
-    //     $("#area").hide();
-    //     $("#type").hide();
-    //     $("#emotion").hide();
-    //     $("#hotspot").hide();
-    //     // document.write(123);
-    // });
-    $("#areabutton").click(function(){
-        $("#mainlist").hide();
-        $("#amount").hide();
-        $("#depart").hide();
-        $("#area").show();
-        $("#type").hide();
-        $("#emotion").hide();
-        $("#hotspot").hide();
-        // document.write(123);
-        $(".page-header").text("投诉量按地区分布图");
-    });
-    $("#typebutton").click(function(){
-        $("#mainlist").hide();
-        $("#amount").hide();
-        $("#depart").hide();
-        $("#area").hide();
-        $("#type").show();
-        $("#emotion").hide();
-        $("#hotspot").hide();
-        // document.write(123);
-        $(".page-header").text("投诉量按地区分布图");
-    });
-    $("#emotionbutton").click(function(){
-        $("#mainlist").hide();
-        $("#amount").hide();
-        $("#depart").hide();
-        $("#area").hide();
-        $("#type").hide();
-        $("#emotion").show();
-        $("#hotspot").hide();
-        // document.write(123);
-        $(".page-header").text("投诉量按地区分布图");
-    });
-    $("#hotspotbutton").click(function(){
-        $("#mainlist").hide();
-        $("#amount").hide();
-        $("#depart").hide();
-        $("#area").hide();
-        $("#type").hide();
-        $("#emotion").hide();
-        $("#hotspot").show();
-        // document.write(123);
-        $(".page-header").text("投诉量按地区分布图");
-    });
+
+
 
 
 //refresh list
@@ -136,3 +65,117 @@ $(document).ready(function(){
 //     document.write(j);
 //     }
 // );
+$("#listbutton").click(function(){
+    $("#mainlist").show();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("投诉线索智能筛查系统");
+});
+$("#amountbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").show();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("最近一周的投诉量趋势图");
+});
+// $("#departbutton").click(function(){
+//     $("#amount").hide();
+//     $("#depart").show();
+//     $("#area").hide();
+//     $("#type").hide();
+//     $("#emotion").hide();
+//     $("#hotspot").hide();
+//     // document.write(123);
+// });
+$("#areabutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").show();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("投诉量按地区分布图");
+});
+$("#typebutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").show();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("投诉量按类别分布图");
+});
+$("#emotionbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").show();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("用户情感分析图");
+});
+$("#hotspotbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").show();
+    $("#ereaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("数据来源排行图");
+});
+
+$("#ereaefficbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").show();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("各 地区 平均办理时效");
+});
+$("#departefficbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#emotion").hide();
+    $("#hotspot").hide();
+    $("#ereaeffic").hide();
+    $("#departeffic").show();
+    // document.write(123);
+    $(".page-header").text("各 部门 平均办理时效");
+});
