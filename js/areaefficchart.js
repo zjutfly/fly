@@ -1,4 +1,4 @@
-// departeffic
+// areaeffic
 // getdata
 var data1;
 $(document).ready(function(){
@@ -8,7 +8,7 @@ $(document).ready(function(){
         data1 = datas;
     })
 // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('departeffic'));
+    var myChart = echarts.init(document.getElementById('areaeffic'));
 // 指定图表的配置项和数据
     var option = {
         color: ['#3398DB'],
@@ -37,8 +37,8 @@ $(document).ready(function(){
         xAxis : [
             {
                 type : 'category',
-                // data: data1.departs,
-                data : ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"],
+                // data: data1.areas,
+                data : ["上城区","下城区","上城区","下城区","上城区","下城区"],
                 axisTick: {
                     alignWithLabel: true
                 }
@@ -55,7 +55,7 @@ $(document).ready(function(){
                 type:'bar',
                 barWidth: '60%',
                 // data: data1.values,
-                data: [5, 20, 36, 10, 10, 3]
+                data:[10, 52, 200, 334, 390, 220]
             }
         ]
     };

@@ -1,4 +1,4 @@
-// amount
+// hotspot
 
 
 // getdata
@@ -21,7 +21,7 @@ $(document).ready(function(){
         };
     }
     // 基于准备好的dom，初始化echarts实例
-    var myChart = echarts.init(document.getElementById('emotion'));
+    var myChart = echarts.init(document.getElementById('hotspot'));
     // 指定图表的配置项和数据
     var option = {
         title: {
@@ -31,6 +31,16 @@ $(document).ready(function(){
         tooltip: {
             show: true
         },
+        // toolbox: {
+        //     show : true,
+        //     feature : {
+        //         mark : {show: true},
+        //         dataView : {show: true, readOnly: true},
+        //         magicType : {show: true, type: ['line', 'bar']},
+        //         restore : {show: true},
+        //         saveAsImage : {show: true}
+        //     }
+        // },
         series: [{
             name: 'Google Trends',
             type: 'wordCloud',

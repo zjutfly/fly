@@ -7,12 +7,13 @@ $(document).ready(function(){
         else if (code == 201)  alert(error);
         data1 = datas;
     })
-    // 基于准备好的dom，初始化echarts实例
+// 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById('amount'));
-    // 指定图表的配置项和数据
+// 指定图表的配置项和数据
     var option = {
         title: {
-            text: '投诉总量趋势图'
+            text: '投诉总量趋势图',
+            subtext: '数据来自fly'
         },
         tooltip: {},
         legend: {
@@ -45,6 +46,6 @@ $(document).ready(function(){
             }
         }]
     };
-    // 使用刚指定的配置项和数据显示图表。
+// 使用刚指定的配置项和数据显示图表。
     myChart.setOption(option);
 });

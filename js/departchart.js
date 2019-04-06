@@ -1,4 +1,4 @@
-// area
+// depart
 var data1;
 $(document).ready(function(){
     $.get("URL",function(datas, error, code){
@@ -7,11 +7,11 @@ $(document).ready(function(){
         data1 = datas;
     })
 
-    var areachart = echarts.init(document.getElementById('area'));
+    var areachart = echarts.init(document.getElementById('depart'));
 
     var option = {
         title: {
-            text: '投诉量地区分布图',
+            text: '投诉量部门分布图',
             subtext: '数据来自fly'
         },
         tooltip: {
@@ -42,8 +42,8 @@ $(document).ready(function(){
         },
         yAxis: {
             type: 'category',
-            // data: data1.areas
-            data: ['巴西','印尼','美国','印度','中国','世界人口(万)']
+            // data: data1.departs
+            data: ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"]
         },
         series: [
             {

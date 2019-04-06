@@ -29,9 +29,9 @@ $(document).ready(function(){
     $("#depart").hide();
     $("#area").hide();
     $("#type").hide();
-    $("#emotion").hide();
+    $("#from").hide();
     $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").hide();
 
     $("#kkk").click(function(){
@@ -71,9 +71,9 @@ $("#listbutton").click(function(){
     $("#depart").hide();
     $("#area").hide();
     $("#type").hide();
-    $("#emotion").hide();
+    $("#from").hide();
     $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉线索智能筛查系统");
@@ -84,31 +84,35 @@ $("#amountbutton").click(function(){
     $("#depart").hide();
     $("#area").hide();
     $("#type").hide();
-    $("#emotion").hide();
+    $("#from").hide();
     $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("最近一周的投诉量趋势图");
 });
-// $("#departbutton").click(function(){
-//     $("#amount").hide();
-//     $("#depart").show();
-//     $("#area").hide();
-//     $("#type").hide();
-//     $("#emotion").hide();
-//     $("#hotspot").hide();
-//     // document.write(123);
-// });
+$("#departbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").show();
+    $("#area").hide();
+    $("#type").hide();
+    $("#from").hide();
+    $("#hotspot").hide();
+    $("#areaeffic").hide();
+    $("#departeffic").hide();
+    // document.write(123);
+    $(".page-header").text("投诉量部门分布图");
+});
 $("#areabutton").click(function(){
     $("#mainlist").hide();
     $("#amount").hide();
     $("#depart").hide();
     $("#area").show();
     $("#type").hide();
-    $("#emotion").hide();
+    $("#from").hide();
     $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉量按地区分布图");
@@ -119,51 +123,24 @@ $("#typebutton").click(function(){
     $("#depart").hide();
     $("#area").hide();
     $("#type").show();
-    $("#emotion").hide();
+    $("#from").hide();
     $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉量按类别分布图");
 });
-$("#emotionbutton").click(function(){
-    $("#mainlist").hide();
-    $("#amount").hide();
-    $("#depart").hide();
-    $("#area").hide();
-    $("#type").hide();
-    $("#emotion").show();
-    $("#hotspot").hide();
-    $("#ereaeffic").hide();
-    $("#departeffic").hide();
-    // document.write(123);
-    $(".page-header").text("用户情感分析图");
-});
-$("#hotspotbutton").click(function(){
-    $("#mainlist").hide();
-    $("#amount").hide();
-    $("#depart").hide();
-    $("#area").hide();
-    $("#type").hide();
-    $("#emotion").hide();
-    $("#hotspot").show();
-    $("#ereaeffic").hide();
-    $("#departeffic").hide();
-    // document.write(123);
-    $(".page-header").text("数据来源排行图");
-});
 
-$("#ereaefficbutton").click(function(){
+$("#areaefficbutton").click(function(){
     $("#mainlist").hide();
     $("#amount").hide();
     $("#depart").hide();
     $("#area").hide();
     $("#type").hide();
-    $("#emotion").hide();
-    $("#hotspot").hide();
-    $("#ereaeffic").show();
+    $("#areaeffic").show();
     $("#departeffic").hide();
-    // document.write(123);
+    $("#from").hide();
+    $("#hotspot").hide();
     $(".page-header").text("各 地区 平均办理时效");
 });
 $("#departefficbutton").click(function(){
@@ -172,10 +149,34 @@ $("#departefficbutton").click(function(){
     $("#depart").hide();
     $("#area").hide();
     $("#type").hide();
-    $("#emotion").hide();
-    $("#hotspot").hide();
-    $("#ereaeffic").hide();
+    $("#areaeffic").hide();
     $("#departeffic").show();
-    // document.write(123);
+    $("#from").hide();
+    $("#hotspot").hide();
     $(".page-header").text("各 部门 平均办理时效");
+});
+
+$("#frombutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#from").show();
+    $("#hotspot").hide();
+    $("#areaeffic").hide();
+    $("#departeffic").hide();
+    $(".page-header").text("数据来源排行图");
+});
+$("#hotspotbutton").click(function(){
+    $("#mainlist").hide();
+    $("#amount").hide();
+    $("#depart").hide();
+    $("#area").hide();
+    $("#type").hide();
+    $("#from").hide();
+    $("#hotspot").show();
+    $("#areaeffic").hide();
+    $("#departeffic").hide();
+    $(".page-header").text("用户热词分析图");
 });
