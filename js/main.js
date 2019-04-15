@@ -188,3 +188,8 @@ $("#hotspotbutton").click(function(){
     $("#departeffic").hide();
     $(".page-header").text("用户热词分析图");
 });
+
+
+$("#mainbutton").click(function () {
+    $(location).attr("href", "temp.html");
+})
