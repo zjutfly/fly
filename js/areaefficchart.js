@@ -3,10 +3,10 @@
 function showareaeffic() {
     var data4;
     $.get("URL",function(data, status){
-        alert("数据: " + datas + "\n状态: " + status);
+        alert("数据: " + data + "\n状态: " + status);
         let result = JSON.parse(data);
         data4 = result.data;
-        // 基于准备好的dom，初始化echarts实例
+// 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('areaeffic'));
 // 指定图表的配置项和数据
         var option = {

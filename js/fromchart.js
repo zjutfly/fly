@@ -2,11 +2,12 @@
 // getdata
 function showfrom() {
     var data3
-    $.get("URL",function(datas, status){
+    $.get("URL",function(data, status){
 
         alert("数据: " + data + "\n状态: " + status);
         let result = JSON.parse(data);
         data3 = result.data;
+
 // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('from'));
 // 指定图表的配置项和数据
