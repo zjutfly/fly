@@ -77,6 +77,7 @@ $("#listbutton").click(function(){
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉线索智能筛查系统");
+
 });
 $("#amountbutton").click(function(){
     $("#mainlist").hide();
@@ -90,6 +91,7 @@ $("#amountbutton").click(function(){
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("最近一周的投诉量趋势图");
+    showamount();
 });
 $("#departbutton").click(function(){
     $("#mainlist").hide();
@@ -103,6 +105,7 @@ $("#departbutton").click(function(){
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉量部门分布图");
+    showdepart();
 });
 $("#areabutton").click(function(){
     $("#mainlist").hide();
@@ -116,6 +119,7 @@ $("#areabutton").click(function(){
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉量按地区分布图");
+    showarea();
 });
 $("#typebutton").click(function(){
     $("#mainlist").hide();
@@ -129,6 +133,7 @@ $("#typebutton").click(function(){
     $("#departeffic").hide();
     // document.write(123);
     $(".page-header").text("投诉量按类别分布图");
+    showtype();
 });
 
 $("#areaefficbutton").click(function(){
@@ -142,6 +147,7 @@ $("#areaefficbutton").click(function(){
     $("#from").hide();
     $("#hotspot").hide();
     $(".page-header").text("各 地区 平均办理时效");
+    showareaeffic();
 });
 $("#departefficbutton").click(function(){
     $("#mainlist").hide();
@@ -154,6 +160,7 @@ $("#departefficbutton").click(function(){
     $("#from").hide();
     $("#hotspot").hide();
     $(".page-header").text("各 部门 平均办理时效");
+    showdeparteffic();
 });
 
 $("#frombutton").click(function(){
@@ -167,6 +174,7 @@ $("#frombutton").click(function(){
     $("#areaeffic").hide();
     $("#departeffic").hide();
     $(".page-header").text("数据来源排行图");
+    showfrom();
 });
 $("#hotspotbutton").click(function(){
     $("#mainlist").hide();
