@@ -31,7 +31,7 @@ $("#kkk").click(function(){
 // });
 
 $("#listbutton").click(function(){
-    $("#mytab").show();
+    $("#mainlist").show();
     $("#amount").hide();
     $("#depart").hide();
     $("#area").hide();
@@ -44,7 +44,7 @@ $("#listbutton").click(function(){
 
 });
 $("#amountbutton").click(function(){
-    $("#mytab").hide();
+    $("#mainlist").hide();
     $("#amount").show();
     $("#depart").hide();
     $("#area").hide();

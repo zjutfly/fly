@@ -1,14 +1,8 @@
 // hotspot
 
-
 // getdata
 var data1;
 $(document).ready(function(){
-    $.get("URL",function(datas, error, code){
-        if (code == 200)  alert("数据: " + datas + "\n状态: " + error);
-        else if (code == 201)  alert(error);
-        data1 = datas;
-    })
     function createRandomItemStyle() {
         return {
             normal: {
@@ -31,16 +25,6 @@ $(document).ready(function(){
         tooltip: {
             show: true
         },
-        // toolbox: {
-        //     show : true,
-        //     feature : {
-        //         mark : {show: true},
-        //         dataView : {show: true, readOnly: true},
-        //         magicType : {show: true, type: ['line', 'bar']},
-        //         restore : {show: true},
-        //         saveAsImage : {show: true}
-        //     }
-        // },
         series: [{
             name: 'Google Trends',
             type: 'wordCloud',
