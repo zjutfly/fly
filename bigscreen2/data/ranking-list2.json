@@ -1,0 +1,62 @@
+[
+    {
+        "order": 1,
+        "stock_code": "601398",
+        "stock_name": "余杭区",
+        "market_capitalization": 193
+    },
+    {
+        "order": 2,
+        "stock_code": "601857",
+        "stock_name": "江干区",
+        "market_capitalization": 188
+    },
+    {
+        "order": 3,
+        "stock_code": "601288",
+        "stock_name": "萧山区",
+        "market_capitalization": 124
+    },
+    {
+        "order": 4,
+        "stock_code": "601988",
+        "stock_name": "拱墅区",
+        "market_capitalization": 99
+    },
+    {
+        "order": 5,
+        "stock_code": "601318",
+        "stock_name": "滨江区",
+        "market_capitalization": 98
+    },
+    {
+        "order": 6,
+        "stock_code": "600519",
+        "stock_name": "上城区",
+        "market_capitalization": 96
+    },
+    {
+        "order": 7,
+        "stock_code": "600028",
+        "stock_name": "桐庐县",
+        "market_capitalization": 47
+    },
+    {
+        "order": 8,
+        "stock_code": "600036",
+        "stock_name": "建德市",
+        "market_capitalization": 45
+    },
+    {
+        "order": 9,
+        "stock_code": "601628",
+        "stock_name": "临安区",
+        "market_capitalization": 35
+    },
+    {
+        "order": 10,
+        "stock_code": "601088",
+        "stock_name": "开发区",
+        "market_capitalization": 30
+    }
+]

@@ -2,61 +2,61 @@
 	{
 		"order": 1,
 		"stock_code": "601398",
-		"stock_name": "工商银行",
-		"market_capitalization": 14451.21
+		"stock_name": "开发区",
+		"market_capitalization": 2.5593
 	},
 	{
 		"order": 2,
 		"stock_code": "601857",
-		"stock_name": "中国石油",
-		"market_capitalization": 13148.07
+		"stock_name": "滨江区",
+		"market_capitalization": 3.0707
 	},
 	{
 		"order": 3,
 		"stock_code": "601288",
-		"stock_name": "农业银行",
-		"market_capitalization": 11620.49
+		"stock_name": "下城区",
+		"market_capitalization": 3.0889
 	},
 	{
 		"order": 4,
 		"stock_code": "601988",
-		"stock_name": "中国银行",
-		"market_capitalization": 7608.64
+		"stock_name": "富阳区",
+		"market_capitalization": 3.0949
 	},
 	{
 		"order": 5,
 		"stock_code": "601318",
-		"stock_name": "中国平安",
-		"market_capitalization": 7004.4
+		"stock_name": "上城区",
+		"market_capitalization": 3.2191
 	},
 	{
 		"order": 6,
 		"stock_code": "600519",
-		"stock_name": "贵州茅台",
-		"market_capitalization": 6934.21
+		"stock_name": "临安区",
+		"market_capitalization": 3.2464
 	},
 	{
 		"order": 7,
 		"stock_code": "600028",
-		"stock_name": "中国石化",
-		"market_capitalization": 5905.48
+		"stock_name": "拱墅区",
+		"market_capitalization": 3.4341
 	},
 	{
 		"order": 8,
 		"stock_code": "600036",
-		"stock_name": "招商银行",
-		"market_capitalization": 5891.63
+		"stock_name": "建德市",
+		"market_capitalization": 3.4943
 	},
 	{
 		"order": 9,
 		"stock_code": "601628",
-		"stock_name": "中国人寿",
-		"market_capitalization": 4583.26
+		"stock_name": "江干区",
+		"market_capitalization": 3.5623
 	},
 	{
 		"order": 10,
 		"stock_code": "601088",
-		"stock_name": "中国神华",
-		"market_capitalization": 3298.21
+		"stock_name": "萧山区",
+		"market_capitalization": 3.6653
 	}
 ]

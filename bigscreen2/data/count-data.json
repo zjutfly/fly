@@ -1,8 +1,8 @@
 {
-	"listed_companies_total": 3574,
-	"listed_securities_total": 20018,
+	"listed_companies_total": 3574, //涉及部门数
+	"listed_securities_total": 20018, //近7日信件总量
 	"total_market_value": 455294.1,
 	"circulation_market_value": 370447.9,
-	"sh_pe_ratio": 13.16,
-	"sz_pe_ratio": 20.99	
+	"sh_pe_ratio": 77.23, //有效投诉占比
+	"sz_pe_ratio": 20.99 //平均办理时效
 }
