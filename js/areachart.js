@@ -99,7 +99,7 @@ $(document).ready(function(){
         yAxis: {
             type: 'category',
             // data: data2.areas
-            data: ['巴西','印尼','美国','印度','中国','世界人口(万)']
+            data: ['上城区','下城区','滨江区','印度','中国','世界人口(万)']
         },
         series: [
             {
