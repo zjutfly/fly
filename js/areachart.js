@@ -99,7 +99,7 @@ $(document).ready(function(){
         yAxis: {
             type: 'category',
             // data: data2.areas
-            data: ['上城区','下城区','滨江区','印度','中国','世界人口(万)']
+            data: ['上城区','下城区','滨江区','富阳区','临安区','拱墅区']
         },
         series: [
             {

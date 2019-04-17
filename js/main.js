@@ -151,5 +151,5 @@ $("#hotspotbutton").click(function(){
 
 
 $("#mainbutton").click(function () {
-    $(location).attr("href", "temp.html");
+    $(location).attr("href", "bigscreen2/index.html");
 })
