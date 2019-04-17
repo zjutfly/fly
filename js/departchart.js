@@ -42,15 +42,15 @@ function showdepart( ) {
             },
             yAxis: {
                 type: 'category',
-                data: data2.departs
-                // data: ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"]
+                // data: data2.departs
+                data: ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"]
             },
             series: [
                 {
                     name: '2012年',
                     type: 'bar',
-                    data: data2.amount
-                    // data: [19325, 23438, 31000, 121594, 134141, 681807]
+                    // data: data2.amount
+                    data: [19325, 23438, 31000, 121594, 134141, 681807]
                 }
             ]
         };

@@ -144,7 +144,8 @@ textarea {
 .board{
     padding-top: 40px;
     padding-left: 40px;
-    background-color: #F5F5F5;
+    background-color: white;
+    /*background-color: rgba(0,0,0,0);*/
     border-radius: 30px;
     width: 745px;
     height: 600px;

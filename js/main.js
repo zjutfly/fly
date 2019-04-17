@@ -1,30 +1,12 @@
-var data1;
-function getdata() {
-    $.get("URL",function(datas, error, code){
-        if (code == 200)  alert("数据: " + datas + "\n状态: " + error);
-        else if (code == 201)  alert(error);
-        data1 = datas;
-    })
-}
-//
-function createtable(data1) {
-    var tableData = "<tr>";
-    for(var i = 0; i < data1.length; i++) {
-        tableData += "<th>" + data1[i].no + "</th>";
-        tableData += "<th>" + data1[i].content + "</th>";
-        tableData += "<th>" + data1[i].time + "</th>";
-    }
-    tableData += "</tr>";
-    $("#tbody1").html(tableData);
-}
-
+// function getdata() {
+//     $.get("list_add/", function(data, status){
+//         alert("数据: " + data + "\n状态: " + status);
+//     });
+// }
 $(document).ready(function(){
-    //init table
+    // init table
 
-    // getdata();
-    // createtable(data1);
-
-    $("#mainlist").show();
+    // $("#mainlist").show();
     $("#amount").hide();
     $("#depart").hide();
     $("#area").hide();
@@ -33,40 +15,23 @@ $(document).ready(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-
-    $("#kkk").click(function(){
-        $("#flyfly").hide();
-        // document.write(123);
-    });
-
-    //header背景色调变化
-    //3.31 移除了header 换成了sidebar
-    // $(".flyheader").mouseenter(function(){
-    //     $("#flyheader").css("background","#000000");
-    // });
-    // $(".flyheader").mouseleave(function(){
-    //     $("#flyheader").css("background","#1E1D22");
-    // });
-
-
-
-
-//refresh list
-    $("#refreshbutton").click(function(){
-        getdata();
-        createtable(data1);
-    });
-
+});
+$("#kkk").click(function(){
+    $("#flyfly").hide();
+    // document.write(123);
 });
 
-// jquery test
-// $(function () {
-//     var j;
-//     document.write(j);
-//     }
-// );
+//header背景色调变化
+//3.31 移除了header 换成了sidebar
+// $(".flyheader").mouseenter(function(){
+//     $("#flyheader").css("background","#000000");
+// });
+// $(".flyheader").mouseleave(function(){
+//     $("#flyheader").css("background","#1E1D22");
+// });
+
 $("#listbutton").click(function(){
-    $("#mainlist").show();
+    $("#mytab").show();
     $("#amount").hide();
     $("#depart").hide();
     $("#area").hide();
@@ -75,12 +40,11 @@ $("#listbutton").click(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-    // document.write(123);
     $(".page-header").text("投诉线索智能筛查系统");
 
 });
 $("#amountbutton").click(function(){
-    $("#mainlist").hide();
+    $("#mytab").hide();
     $("#amount").show();
     $("#depart").hide();
     $("#area").hide();
@@ -89,7 +53,6 @@ $("#amountbutton").click(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-    // document.write(123);
     $(".page-header").text("最近一周的投诉量趋势图");
     showamount();
 });
@@ -103,7 +66,6 @@ $("#departbutton").click(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-    // document.write(123);
     $(".page-header").text("投诉量部门分布图");
     showdepart();
 });
@@ -117,7 +79,6 @@ $("#areabutton").click(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-    // document.write(123);
     $(".page-header").text("投诉量按地区分布图");
     showarea();
 });
@@ -131,7 +92,6 @@ $("#typebutton").click(function(){
     $("#hotspot").hide();
     $("#areaeffic").hide();
     $("#departeffic").hide();
-    // document.write(123);
     $(".page-header").text("投诉量按类别分布图");
     showtype();
 });
