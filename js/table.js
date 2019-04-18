@@ -7,7 +7,7 @@ $('#mytab').bootstrapTable({
     search : "true",
     uniqueId: "ID",
     pageSize: "8",
-    pagination: false, // 是否分页
+    pagination: true, // 是否分页
     // pageList: [5, 8, 11, 14],        //可供选择的每页的行数（*）
     sortable: true, // 是否启用排序
     cardView: false,                    //是否显示详细视图
