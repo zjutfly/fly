@@ -96,7 +96,8 @@ $(document).ready(function(){
             {
                 type : 'category',
                 // data: data1.areas,
-                data : ["上城区","下城区","上城区","下城区","上城区","下城区"],
+                data: ['上城区','下城区','滨江区','富阳区','临安区','拱墅区','开发区','建德市','桐庐县'],
+
                 axisTick: {
                     alignWithLabel: true
                 }
@@ -109,11 +110,11 @@ $(document).ready(function(){
         ],
         series : [
             {
-                name:'直接访问',
+                name:'时效（天）',
                 type:'bar',
                 barWidth: '60%',
                 // data: data1.values,
-                data:[10, 52, 200, 334, 390, 220]
+                data:[3.31, 5.45, 4.441, 4.121, 4.43241, 3.46, 4.31, 3.49, 4.81]
             }
         ]
     };

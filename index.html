@@ -129,6 +129,9 @@
                     <div id="mainlist" class="mainlist table">
                         <table id="mytab" class="table table-hover"></table>
                     </div>
+
+                    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Large modal</button>-->
+
                     <div id="amount" class="board"></div>
                     <div id="depart" class="board"></div>
                     <div id="area" class="board"></div>
@@ -139,6 +142,92 @@
                     <div id="hotspot" class="board"></div>
                     <!--<p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>-->
 
+                </div>
+
+            </div>
+        </div>
+        <div class="modal fade bs-similar-modal-lg" id="simi" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title" style="font-size: 28px; margin: 20px; font-style: italic">相似事件</div>
+                        <!--<h3 class="modal-title" id="myModalLabel">相似事件！</h3>-->
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-striped">
+                            <!--<caption>相似事件有：</caption>-->
+                            <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>类型</th>
+                                <th>信件内容</th>
+                                <th>操作</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="line1">
+                                <td>2019-03-26</td>
+                                <td>投诉</td>
+                                <td>杭州******金融办不作为，包庇杭州一桶金金融服务有限公司实控人吴新军！</td>
+                                <td><a class='btn btn-xs btn-danger' id="sendback1" title='退回'><span class='glyphicon glyphicon-remove'></span></a></td>
+                            </tr>
+                            <tr id="line2">
+                                <td>2019-04-01</td>
+                                <td>投诉</td>
+                                <td>杭州市******金融办不作为，没有处理一桶金逾期欠款不还之事</td>
+                                <td><a class='btn btn-xs btn-danger' id="sendback2" title='退回'><span class='glyphicon glyphicon-remove'></span></a></td>
+
+                            </tr>
+                            <tr id="line3" >
+                                <td>2019-04-05</td>
+                                <td>无效信息</td>
+                                <td>我有个罚款10000元</td>
+                                <td><a class='btn btn-xs btn-danger' id="sendback3" title='退回'><span class='glyphicon glyphicon-remove'></span></a></td>
+                            </tr>
+                            <tr id="line4" >
+                                <td>2019-04-03</td>
+                                <td>投诉</td>
+                                <td>杭州一桶金服务有限公司合同诈骗假标自融，******金融办不作为，成立的委员会也被控股人吴新军维稳</td>
+                                <td><a class='btn btn-xs btn-danger' id="sendback4" title='退回'><span class='glyphicon glyphicon-remove'></span></a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div style="margin: 30px;">
+                        <input type="text" class="form-control" id="name" placeholder="请输入回复信息" style="height: 60px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" id="1-reply" class="btn btn-primary" >一键回复</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-lg" id="exam" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="modal-title" style="font-size: 28px; margin: 20px">内容详情：</div>
+                        <div style="font-size: 24px; margin: 20px;">杭州一桶金服务有限公司合同诈骗假标自融，******金融办不作为，成立的委员会也被控股人吴新军维稳</div>
+                        <div style="font-size: 24px; margin: 20px;">时间：2019.4.5  &nbsp; 类型：投诉</div>
+                        <!--<h3 class="modal-title" id="myModalLabel">相似事件！</h3>-->
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title" style="font-size: 28px; margin: 20px;">命名实体：</div>
+                        <div style="font-size: 24px; margin: 20px" > 一桶金服务有限公司 &nbsp;&nbsp;杭州 &nbsp;&nbsp; 金融办 &nbsp;&nbsp; 委员会 &nbsp;&nbsp; </div>
+                        <div class="modal-title" style="font-size: 28px; margin: 20px;">关键词：</div>
+                        <div style="font-size: 24px; margin: 20px" > 假标 &nbsp;&nbsp;合同诈骗 &nbsp;&nbsp; </div>
+                    </div>
+                    <div style="margin: 30px;">
+                        <input type="text" class="form-control" id="name2" placeholder="请输入回复信息" style="height: 60px">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                        <button type="button" id="reply" class="btn btn-primary" >回复</button>
+                    </div>
                 </div>
             </div>
         </div>

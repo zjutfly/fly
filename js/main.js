@@ -153,3 +153,31 @@ $("#hotspotbutton").click(function(){
 $("#mainbutton").click(function () {
     $(location).attr("href", "bigscreen2/index.html");
 })
+
+function remarks(value, row, index) {
+    if (value.length > 20) {
+        $("#message-text").val(value);
+        return "<button type=\"button\" class=\"btn btn-link\" data-toggle=\"modal\" data-target=\"#exampleModal\">详情</button>";
+    } else {
+        return "<div style=\"font-family:'微软雅黑'\">" + value + "</div>";
+    }
+}
+$("#1-reply").click(function () {
+    alert("成功！");
+})
+
+$("#reply").click(function () {
+    alert("成功！");
+})
+
+$("#sendback1").click(function () {
+    $("#line1").remove();
+})
+
+$("#sendback2").click(function () {
+    $("#line2").remove();
+})
+
+$("#sendback3").click(function () {
+    $("#line3").remove();
+})

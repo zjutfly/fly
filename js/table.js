@@ -44,8 +44,8 @@ $('#mytab').bootstrapTable({
 function actionFormatter(value, row, index) {
     var id = value;
     var result = "";
-    result += "<a href='javascript:;' class='btn btn-xs btn-info' onclick=findsimilar() title='查看相似事件'><span class='glyphicon glyphicon-search'></span></a>&nbsp;";
-    result += "<a href='javascript:;' class='btn btn-xs btn-warning' onclick=chakanxiangqing() title='查看详情、回复'><span class='glyphicon glyphicon-pencil'></span></a>&nbsp;";
+    result += "<a href='javascript:;' class='btn btn-xs btn-info' onclick=findsimilar() title='查看相似事件'  data-toggle=\"modal\" data-target=\".bs-similar-modal-lg\"><span class='glyphicon glyphicon-search'></span></a>&nbsp;";
+    result += "<a href='javascript:;' class='btn btn-xs btn-warning' onclick=chakanxiangqing() title='查看详情、回复'  data-toggle=\"modal\" data-target=\".bs-example-modal-lg\"><span class='glyphicon glyphicon-pencil'></span></a>&nbsp;";
     // result += "<a href='javascript:;' class='btn btn-xs btn-danger' onclick=\"DeleteByIds('" + id + "')\" title='退回'><span class='glyphicon glyphicon-remove'></span></a>";
     return result;
 }

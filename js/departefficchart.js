@@ -97,7 +97,7 @@ $(document).ready(function(){
             {
                 type : 'category',
                 // data: data1.departs,
-                data : ["计划生育局","阿萨德局","啊投影仪局","计算机局","快乐水是是局","拉我玩局"],
+                data: ["余杭区住建局","余杭区公安分局","江干区公安分局","上城区人力社保局","城乡建设委员会","开发区交警大队"],
                 axisTick: {
                     alignWithLabel: true
                 }
@@ -110,11 +110,11 @@ $(document).ready(function(){
         ],
         series : [
             {
-                name:'直接访问',
+                name:'时效（天）',
                 type:'bar',
                 barWidth: '60%',
                 // data: data1.values,
-                data: [5, 20, 36, 10, 10, 3]
+                data: [3.44, 3.78, 3.44, 4.19, 4.67, 3.5]
             }
         ]
     };
